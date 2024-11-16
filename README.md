@@ -1,50 +1,141 @@
-# React + TypeScript + Vite
+# Snap Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Snap Components** is a component library built with [Vite](https://vitejs.dev/). It provides a collection of reusable, modular, and efficient UI components for modern web applications.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🚀 **Fast** development with Vite
+- 📦 **Library Mode** ready for publishing
+- 🎨 **Reusable Components** with customizable styles
+- 🛠 **Developer-friendly** setup with support for hot-reloading and modern JavaScript/TypeScript
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow these steps to set up the project locally:
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Ensure you have the following installed:
+
+- **Node.js** (v16 or higher recommended)
+- **npm** (v8 or higher) or **Yarn**
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/your-username/snap-components.git
+   ```
+
+2. **Navigate into the project directory**:
+
+   ```bash
+   cd snap-components
+   ```
+
+3. **Install dependencies**:
+
+   Using npm:
+
+   ```bash
+   npm install
+   ```
+
+   Or using Yarn:
+
+   ```bash
+   yarn install
+   ```
+
+### Development Server
+
+Start the development server to work on your components with hot-reloading:
+
+```bash
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Or, if you're using Yarn:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+yarn dev
 ```
+
+By default, the development server runs on [http://localhost:5173](http://localhost:5173).
+
+You can preview the components here.
+
+### Build
+
+To build the library for production:
+
+```bash
+npm run build
+```
+
+Or with Yarn:
+
+```bash
+yarn build
+```
+
+This will generate the library in the `dist/` folder.
+
+### Preview Production Build
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+Or:
+
+```bash
+yarn preview
+```
+
+### Scripts Overview
+
+- **`dev`**: Starts the development server.
+- **`build`**: Builds the library for production.
+- **`preview`**: Serves the production build locally.
+- **`test`** _(optional)_: Run tests if configured.
+- **`lint`** _(optional)_: Run linters for code quality checks.
+
+## Project Structure
+
+Here's a brief overview of the directory structure:
+
+```
+snap-components/
+├── src/                # Source code (components, utilities, etc.)
+│   ├── components/     # Individual components
+│   ├── styles/         # Global and component-specific styles
+│   └── index.ts        # Library entry point
+├── public/             # Static assets
+├── dist/               # Build output
+├── vite.config.ts      # Vite configuration
+├── package.json        # Project metadata and dependencies
+└── README.md           # Project documentation
+```
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature/bug fix.
+3. Commit your changes and submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+### Next Steps:
+
+- Add more detailed **usage instructions** as you develop components.
+- Include **examples** and a link to your documentation site (if applicable).
