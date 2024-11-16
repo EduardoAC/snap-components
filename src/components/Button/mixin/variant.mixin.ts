@@ -1,8 +1,10 @@
 import { css } from "styled-components";
 import { ButtonColor, ButtonVariant } from "../Button.types";
-import { setFilledColorMixin } from "../../../mixins/colors/filled.mixin";
-import { setOutlineColorMixin } from "../../../mixins/colors/outline.mixin";
-import { setTextColorMixin } from "../../../mixins/colors/text.mixin";
+import {
+  setFilledColorMixin,
+  setOutlineColorMixin,
+  setTextColorMixin,
+} from "@mixins";
 import { ColorsAvailable } from "../../../theme/types";
 
 export function getColors(

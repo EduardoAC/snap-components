@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { setButtonVariant } from "./mixin/variant.mixin";
 import { ButtonColor, ButtonVariant } from "./Button.types";
+import { setTypographyMixin } from "@mixins";
 
 interface StyledButtonProps {
   $variant: ButtonVariant;
@@ -12,4 +13,5 @@ export const StyledButton = styled.button<StyledButtonProps>`
   border-radius: ${({ theme }) => theme.spacing.xs};
   padding: ${({ theme }) => `${theme.spacing.xs} ${theme.spacing.md}`};
   ${({ $variant, $color }) => setButtonVariant($variant, $color)};
+  ${setTypographyMixin("body1")}
 `;

@@ -1,0 +1,81 @@
+import { Typography, TypographyVariants } from "../../theme/types"; // Adjust path as needed
+
+export const typographyDefinitions: Record<TypographyVariants, Typography> = {
+  heading1: {
+    fontSize: "heading1",
+    fontWeight: "semibold",
+    lineHeight: "heading1",
+    letterSpacing: "normal",
+    fontFamily: "heading",
+  },
+  heading2: {
+    fontSize: "heading2",
+    fontWeight: "semibold",
+    lineHeight: "heading2",
+    letterSpacing: "normal",
+    fontFamily: "heading",
+  },
+  heading3: {
+    fontSize: "heading3",
+    fontWeight: "semibold",
+    lineHeight: "heading3",
+    letterSpacing: "normal",
+    fontFamily: "heading",
+  },
+  heading4: {
+    fontSize: "heading4",
+    fontWeight: "semibold",
+    lineHeight: "heading4",
+    letterSpacing: "normal",
+    fontFamily: "heading",
+  },
+  heading5: {
+    fontSize: "heading5",
+    fontWeight: "semibold",
+    lineHeight: "heading5",
+    letterSpacing: "normal",
+    fontFamily: "heading",
+  },
+  heading6: {
+    fontSize: "heading6",
+    fontWeight: "semibold",
+    lineHeight: "heading6",
+    letterSpacing: "normal",
+    fontFamily: "heading",
+  },
+  subtitle1: {
+    fontSize: "subtitle1",
+    fontWeight: "semibold",
+    lineHeight: "subtitle1",
+    letterSpacing: "normal",
+    fontFamily: "content",
+  },
+  subtitle2: {
+    fontSize: "subtitle2",
+    fontWeight: "semibold",
+    lineHeight: "subtitle2",
+    letterSpacing: "normal",
+    fontFamily: "content",
+  },
+  body1: {
+    fontSize: "body1",
+    fontWeight: "regular",
+    lineHeight: "body1",
+    letterSpacing: "normal",
+    fontFamily: "content",
+  },
+  body2: {
+    fontSize: "body2",
+    fontWeight: "regular",
+    lineHeight: "body2",
+    letterSpacing: "normal",
+    fontFamily: "content",
+  },
+  caption: {
+    fontSize: "caption",
+    fontWeight: "regular",
+    lineHeight: "caption",
+    letterSpacing: "normal",
+    fontFamily: "content",
+  },
+};
