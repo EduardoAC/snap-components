@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { StyledButton } from "./Button.style";
-import { ButtonColor, ButtonVariant } from "./Button.types";
+import { ButtonColor, ButtonSize, ButtonVariant } from "./Button.types";
 
 export interface ButtonProps {
   /** Is this the principal call to action on the page? */
@@ -8,7 +8,7 @@ export interface ButtonProps {
   /** What background color to use */
   color?: ButtonColor;
   /** How large should the button be? */
-  size?: "small" | "medium" | "large";
+  size?: ButtonSize;
   /** Button contents */
   children: ReactNode;
   /** Optional click handler */
