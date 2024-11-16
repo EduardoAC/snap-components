@@ -17,8 +17,8 @@ Follow these steps to set up the project locally:
 
 Ensure you have the following installed:
 
-- **Node.js** (v16 or higher recommended)
-- **npm** (v8 or higher) or **Yarn**
+- **Node.js**: v22 or higher
+- **Yarn**: v4 or higher (a.k.a. **Berry**)
 
 ### Installation
 
@@ -36,14 +36,6 @@ Ensure you have the following installed:
 
 3. **Install dependencies**:
 
-   Using npm:
-
-   ```bash
-   npm install
-   ```
-
-   Or using Yarn:
-
    ```bash
    yarn install
    ```
@@ -51,12 +43,6 @@ Ensure you have the following installed:
 ### Development Server
 
 Start the development server to work on your components with hot-reloading:
-
-```bash
-npm run dev
-```
-
-Or, if you're using Yarn:
 
 ```bash
 yarn dev
@@ -71,12 +57,6 @@ You can preview the components here.
 To build the library for production:
 
 ```bash
-npm run build
-```
-
-Or with Yarn:
-
-```bash
 yarn build
 ```
 
@@ -87,22 +67,16 @@ This will generate the library in the `dist/` folder.
 To preview the production build locally:
 
 ```bash
-npm run preview
-```
-
-Or:
-
-```bash
 yarn preview
 ```
 
 ### Scripts Overview
 
-- **`dev`**: Starts the development server.
-- **`build`**: Builds the library for production.
-- **`preview`**: Serves the production build locally.
-- **`test`** _(optional)_: Run tests if configured.
-- **`lint`** _(optional)_: Run linters for code quality checks.
+- **`yarn dev`**: Starts the development server.
+- **`yarn build`**: Builds the library for production.
+- **`yarn preview`**: Serves the production build locally.
+- **`yarn test`** _(optional)_: Run tests if configured.
+- **`yarn lint`** _(optional)_: Run linters for code quality checks.
 
 ## Project Structure
 
@@ -117,9 +91,20 @@ snap-components/
 ├── public/             # Static assets
 ├── dist/               # Build output
 ├── vite.config.ts      # Vite configuration
+├── .yarn/              # Yarn 4 (Berry) configuration folder
 ├── package.json        # Project metadata and dependencies
 └── README.md           # Project documentation
 ```
+
+## Using Plug'n'Play (PnP)
+
+Since you're using Yarn 4, Plug'n'Play (PnP) is likely enabled by default. If you're integrating with tools like VSCode, ensure compatibility by installing the required SDKs:
+
+```bash
+yarn dlx @yarnpkg/sdks vscode
+```
+
+This will generate a `.vscode` folder with configurations for TypeScript, ESLint, and Prettier.
 
 ## Contributing
 
@@ -137,5 +122,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ### Next Steps:
 
-- Add more detailed **usage instructions** as you develop components.
-- Include **examples** and a link to your documentation site (if applicable).
+- Add specific **usage examples** for your components.
+- Provide a link to hosted documentation or demos if applicable.
