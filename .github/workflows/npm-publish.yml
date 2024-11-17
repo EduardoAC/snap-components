@@ -13,6 +13,8 @@ on:
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -23,6 +25,10 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
       - name: Publish package
-        run: npm publish --provenance --access=public
+        run: |
+          set -ex
+          npm config set //registry.npmjs.org/:_authToken "$NODE_AUTH_TOKEN"
+          npm whoami
+          npm publish --provenance --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
