@@ -1,8 +1,11 @@
 {
   "name": "snap-components",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
+  "author": "Eduardo Aparicio Cardenes",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "dev": "vite",
     "test": "node -v",
@@ -10,7 +13,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "yarn build"
   },
   "dependencies": {
     "react": "^18.3.1",
