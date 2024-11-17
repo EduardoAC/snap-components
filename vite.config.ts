@@ -11,6 +11,7 @@ export default defineConfig({
       tsconfigPath: "./tsconfig.json",
       rollupTypes: true,
       exclude: ["**/*.stories.tsx"],
+      insertTypesEntry: true,
     }),
   ],
   resolve: {
