@@ -1,11 +1,15 @@
 {
   "name": "snap-components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "author": "Eduardo Aparicio Cardenes",
   "files": [
     "dist/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EduardoAC/snap-components.git"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
