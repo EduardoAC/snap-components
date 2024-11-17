@@ -9,15 +9,15 @@ import{j as n}from"./jsx-runtime-CkxqCPlQ.js";import{n as a}from"./styled-compon
       justifyContent: "space-evenly",
       background: "lightGray",
       padding: "32px"
-    }}>\r
+    }}>
         {Object.entries(theme.colors).map(([color, colorHex]) => {
         if (typeof colorHex === "string") {
           return <div key={color} style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center"
-          }}>\r
-                <h4>{color}</h4>\r
+          }}>
+                <h4>{color}</h4>
                 <div style={{
               background: colorHex as string,
               width: "50px",
@@ -27,12 +27,12 @@ import{j as n}from"./jsx-runtime-CkxqCPlQ.js";import{n as a}from"./styled-compon
               display: "flex",
               alignItems: "center",
               justifyContent: "center"
-            }}>\r
-                  {colorHex}\r
-                </div>\r
+            }}>
+                  {colorHex}
+                </div>
               </div>;
         }
-      })}\r
+      })}
       </div>;
   }
 }`,...(l=(i=t.parameters)==null?void 0:i.docs)==null?void 0:l.source}}};const g=["Default"];export{t as Default,g as __namedExportsOrder,m as default};
