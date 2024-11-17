@@ -1,5 +1,6 @@
 import { Typography, TypographySchema } from "../../theme/types";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function objectEntries<T extends Record<string, any>>(obj: T) {
   return Object.entries(obj) as Array<[keyof T, T[keyof T]]>;
 }
