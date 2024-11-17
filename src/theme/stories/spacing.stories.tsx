@@ -9,6 +9,7 @@ export default meta;
 
 export const Default: StoryObj = {
   render: () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const theme = useTheme();
     const spacing = theme?.spacing;
     if (!spacing) {
